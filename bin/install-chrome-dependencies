@@ -39,7 +39,7 @@ case "${STACK}" in
       libatk-bridge2.0-0
       libatk1.0-0
       libcups2
-      libgbm1=24.0.9
+      libgbm1=24.0.5-1ubuntu1
       libxcomposite1
       libxdamage1
       libxfixes3
