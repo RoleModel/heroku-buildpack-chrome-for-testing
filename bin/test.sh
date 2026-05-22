@@ -6,7 +6,7 @@ STACK_VERSION="${1:?'Error: The stack version number must be specified as the fi
 
 set -x
 
-docker build --progress=plain --build-arg="STACK_VERSION=${STACK_VERSION}" -t heroku-buildpack-chrome-for-testing .
+docker build --build-arg="STACK_VERSION=${STACK_VERSION}" -t heroku-buildpack-chrome-for-testing .
 
 # Note: All of the container commands must be run via a login bash shell otherwise the profile.d scripts won't be run.
 
